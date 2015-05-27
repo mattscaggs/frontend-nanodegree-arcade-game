@@ -1,3 +1,6 @@
+// sublime text 2 for code, checked with http://jshint.com/
+// references noted in seperate txt file
+
 // Enemy class
 var Enemy = function() {
     this.enemyRunway = [-150, 600];
@@ -28,7 +31,6 @@ Enemy.prototype.update = function(dt) {
 // Enemy reset method
 Enemy.prototype.reset = function () {
     var startRunway = this.enemyRunway[0];
-
     this.x = startRunway;
     this.y = this.randomRow();
     this.speed = this.randomSpeed();
@@ -62,7 +64,7 @@ Player.prototype.update = function() {
     }
 };
 
-Player.prototype.reset = function () {
+Player.prototype.reset = function() {
     this.x = 200;
     this.y = 380;
 };
