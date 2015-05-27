@@ -1,5 +1,5 @@
 // sublime text 2 for code, checked with http://jshint.com/
-// references noted in seperate txt file
+// references noted in separate txt file
 
 // Enemy class
 var Enemy = function() {
@@ -77,13 +77,13 @@ Player.prototype.render = function () {
 // player handle input method
 Player.prototype.handleInput = function(key) {
     if (key === 'left' && this.x > 0) {
-        this.x -= 100;
+        this.x -= 101;
     } else if (key === 'up') {
-        this.y -= 80;
+        this.y -= 83;
     } else if (key === 'right' && this.x < 400) {
-        this.x += 100;
+        this.x += 101;
     } else if (key === 'down' && this.y < 380) {
-        this.y += 80;
+        this.y += 83;
     }
 };
 
@@ -99,6 +99,12 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-// Instantiate objects
-var allEnemies = [new Enemy(), new Enemy(), new Enemy(), new Enemy(), new Enemy()];
+// Instantiate objects via loop and push
+var maxEnemies = 5;
+var allEnemies = [];
+for (var i = 0; i < maxEnemies; i++) {
+    var enemy = new Enemy();
+    allEnemies.push(enemy);
+}
+
 var player = new Player();
