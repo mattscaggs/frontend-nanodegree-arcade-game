@@ -59,7 +59,7 @@ var Player = function () {
 
 // player update method
 Player.prototype.update = function() {
-    if (this.y == -20) {
+    if (this.y == -35) {
         this.reset();
     }
 };
