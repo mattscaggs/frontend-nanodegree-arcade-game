@@ -1,0 +1,6 @@
+JavaScript random() Method to randomize enemy speed and rows:
+http://www.w3schools.com/jsref/jsref_random.asp
+
+Threads, concepts on collision detection:
+http://blog.sklambert.com/html5-canvas-game-2d-collision-detection/
+http://stackoverflow.com/questions/2440377/javascript-collision-detection
